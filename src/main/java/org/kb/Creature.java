@@ -1,6 +1,6 @@
 package org.kb;
 
-public class Creature {
+public abstract class Creature {
    private int hp;
    private boolean alive;
    private int strength;
