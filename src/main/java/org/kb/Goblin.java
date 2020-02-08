@@ -10,9 +10,10 @@ public class Goblin extends Monster {
     }
 
 
+
     @Override
     public int attack() {
-        return 0;
+       return getWeaponType().getDamage() + getStrength();
     }
 
 
