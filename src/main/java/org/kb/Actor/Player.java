@@ -1,13 +1,15 @@
-package org.kb;
+package org.kb.Actor;
+
+import org.kb.AbleToAttack;
+import org.kb.WeaponType;
 
 public class Player extends Creature implements AbleToAttack {
-    private WeaponType weaponType;
 
-    public Player(WeaponType weaponType) {
+    public Player(WeaponType playerWeapon) {
         setHp(100);
-        setStrength(100);
+        setStrength(25);
         setAlive(true);
-        this.weaponType = weaponType;
+        weaponType = playerWeapon;
     }
 
     @Override

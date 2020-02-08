@@ -1,4 +1,6 @@
-package org.kb;
+package org.kb.Actor;
+
+import org.kb.WeaponType;
 
 public class Ghul extends Monster {
 
@@ -6,7 +8,7 @@ public class Ghul extends Monster {
     public Ghul() {
         setWeaponType(WeaponType.UNARMED);
         setHp(70);
-        setStrength(90);
+        setStrength(5);
         setAlive(true);
     }
 

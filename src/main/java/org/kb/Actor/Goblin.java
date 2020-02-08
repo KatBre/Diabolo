@@ -1,4 +1,6 @@
-package org.kb;
+package org.kb.Actor;
+
+import org.kb.WeaponType;
 
 public class Goblin extends Monster {
 
@@ -6,7 +8,7 @@ public class Goblin extends Monster {
     public Goblin() {
         setWeaponType(WeaponType.MACE);
         setHp(50);
-        setStrength(80);
+        setStrength(15);
         setAlive(true);
     }
 
