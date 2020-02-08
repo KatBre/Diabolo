@@ -18,5 +18,13 @@ public class Ghul extends Monster {
         return getWeaponType().getDamage() + getStrength();
     }
 
-
+    @Override
+    public String toString() {
+        return "Ghul{" +
+                "hp=" + hp +
+                ", alive=" + alive +
+                ", strength=" + strength +
+                ", weaponType=" + weaponType +
+                '}';
+    }
 }

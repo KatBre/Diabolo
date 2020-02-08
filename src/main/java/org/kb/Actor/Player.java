@@ -19,4 +19,14 @@ public class Player extends Creature implements AbleToAttack {
         }
         return (getWeaponType().getDamage() + 1) + getStrength();
     }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "hp=" + hp +
+                ", alive=" + alive +
+                ", strength=" + strength +
+                ", weaponType=" + weaponType +
+                '}';
+    }
 }

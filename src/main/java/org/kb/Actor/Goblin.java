@@ -19,5 +19,13 @@ public class Goblin extends Monster {
        return getWeaponType().getDamage() + getStrength();
     }
 
-
+    @Override
+    public String toString() {
+        return "Goblin{" +
+                "hp=" + hp +
+                ", alive=" + alive +
+                ", strength=" + strength +
+                ", weaponType=" + weaponType +
+                '}';
+    }
 }

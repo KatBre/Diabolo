@@ -3,9 +3,9 @@ package org.kb.Actor;
 import org.kb.WeaponType;
 
 public abstract class Creature {
-   private int hp;
-   private boolean alive;
-   private int strength;
+   protected int hp;
+   protected boolean alive;
+   protected int strength;
    protected WeaponType weaponType;
 
    public int getHp() {
@@ -44,6 +44,7 @@ public abstract class Creature {
       setHp(getHp() - dmg);
       if (getHp() <= 0){
          setAlive(false);
+         System.out.println("Received " + dmg +  " dmg");
       }
    }
 }
