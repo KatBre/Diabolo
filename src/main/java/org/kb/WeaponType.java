@@ -1,13 +1,17 @@
 package org.kb;
 
 public enum WeaponType {
-    SWORD (5),
-    MACE (10),
+    SWORD (10),
+    MACE (5),
     UNARMED (1);
 
-    public int damage;
+    private final int damage;
 
     WeaponType(int damage) {
         this.damage = damage;
+    }
+
+    public int getDamage() {
+        return damage;
     }
 }
