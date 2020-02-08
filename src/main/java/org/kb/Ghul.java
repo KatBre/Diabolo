@@ -4,9 +4,10 @@ public class Ghul extends Monster {
 
 
     public Ghul() {
-        WeaponType weaponType = WeaponType.UNARMED;
-        int hp = 50;
-        int strength = 80;
+        setWeaponType(WeaponType.UNARMED);
+        setHp(70);
+        setStrength(90);
+        setAlive(true);
     }
 
 

@@ -21,4 +21,20 @@ public abstract class Creature {
    public WeaponType getWeaponType() {
       return weaponType;
    }
+
+   public void setHp(int hp) {
+      this.hp = hp;
+   }
+
+   public void setAlive(boolean alive) {
+      this.alive = alive;
+   }
+
+   public void setStrength(int strength) {
+      this.strength = strength;
+   }
+
+   public void setWeaponType(WeaponType weaponType) {
+      this.weaponType = weaponType;
+   }
 }
